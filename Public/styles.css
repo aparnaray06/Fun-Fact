@@ -1,0 +1,292 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8faff;
+    color: #222c45;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    background: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #3159b7;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #f4ae42;
+    font-size: 30px;
+}
+
+.nav-tag {
+    color: #777f91;
+    font-size: 12px;
+}
+
+
+/* Hero */
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 85px 20px 95px;
+
+    background: linear-gradient(
+        135deg,
+        #e8efff,
+        #e9eaff,
+        #f2eaff
+    );
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 30px;
+    background: white;
+    color: #4666b8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 53px);
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #4166c4;
+}
+
+.hero > p {
+    color: #777f91;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.hero-emoji {
+    position: absolute;
+    right: 12%;
+    top: 30px;
+    font-size: 75px;
+    opacity: 0.35;
+}
+
+
+/* Main */
+.main-container {
+    max-width: 950px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.fact-section {
+    text-align: center;
+}
+
+.section-label {
+    color: #5575c8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.fact-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #858b9b;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+
+/* Fact Card */
+.fact-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 45px 40px;
+
+    background: white;
+    border-radius: 24px;
+
+    border: 1px solid #e9edfa;
+
+    box-shadow: 0 15px 45px rgba(49, 77, 140, 0.09);
+}
+
+.fact-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+
+    background: #edf2ff;
+    border-radius: 22px;
+}
+
+.fact-label {
+    color: #6681c7;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.fact-card p {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #424c65;
+    font-size: 17px;
+    line-height: 1.9;
+
+    margin: 20px 0 25px;
+}
+
+
+/* Button */
+#generateBtn {
+    padding: 15px 28px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #4166c4;
+    color: white;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#generateBtn:hover {
+    background: #294b9f;
+    transform: translateY(-3px);
+}
+
+#generateBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#status {
+    color: #7b8293;
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+
+/* Bottom Section */
+.bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 65px;
+
+    color: #777f91;
+    font-size: 13px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 38px 20px;
+    background: #253657;
+    color: white;
+}
+
+footer h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #c5cee1;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+footer span {
+    color: #aab7d0;
+    font-size: 11px;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 6%;
+    }
+
+    .nav-tag {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero-emoji {
+        display: none;
+    }
+
+    .fact-section h2 {
+        font-size: 27px;
+    }
+
+    .fact-card {
+        padding: 35px 20px;
+    }
+
+    .fact-card p {
+        font-size: 15px;
+    }
+
+    .bottom-section {
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
